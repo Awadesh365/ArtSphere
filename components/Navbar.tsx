@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
+    const session = {}
     return (
         <nav className='flexBetween navbar'>
             <div className='flex-1 flexstart gap-10'>
@@ -24,6 +25,17 @@ const Navbar = () => {
                     ))}
                 </ul>
             </div>
+            <div className='flexCente gap-4'>
+                {session ?}{
+                    <>
+                        UserPhoto
+
+                        <Link href="/create-project">
+                            share your work
+                        </Link>
+                }: <AuthProviders />
+
+                    </div>
         </nav >
     )
 }
