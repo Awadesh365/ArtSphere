@@ -16,8 +16,7 @@ const Navbar = () => {
                         alt="artsphere"
                     />
                 </Link>
-                <ul className="xl:flex hidden
-                    text-small gap-7">
+                <ul className="xl:flex hidden text-small gap-7">
                     {NavLinks.map((navLink) => (
                         <Link href={navLink.href} key={navLink.key}>
                             {navLink.text}
@@ -26,17 +25,18 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='flexCente gap-4'>
-                {session ?}{
+                {session ? (
                     <>
-                        UserPhoto
-
+                        {/* UserPhoto component or image */}
                         <Link href="/create-project">
                             share your work
                         </Link>
-                }: <AuthProviders />
-
-                    </div>
-        </nav >
+                    </>
+                ) : (
+                    <AuthProviders />
+                )}
+            </div>
+        </nav>
     )
 }
 
