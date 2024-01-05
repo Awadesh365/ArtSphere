@@ -1,3 +1,4 @@
+import '.globals.css'
 export const metadata = {
   title: 'artsphere',
   description: 'showcase Your Dedication and Projects Here',
