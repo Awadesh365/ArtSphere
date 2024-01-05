@@ -1,8 +1,21 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
     return (
-        <div>Navbar</div>
+        <nav className='flexBetween navbar'>
+            <div className='flex-1 flexstart gap-10'>
+                <Link href="/">
+                    <Image
+                        src="/logo.svg"
+                        width={115}
+                        height={43}
+                        alt="artsphere"
+                    />
+                </Link>
+            </div>
+        </nav >
     )
 }
 
