@@ -1,6 +1,6 @@
 import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-// import 'globals.css'
+import './globals.css'
 export const metadata = {
   title: 'artsphere',
   description: 'showcase Your Dedication and Projects Here',
